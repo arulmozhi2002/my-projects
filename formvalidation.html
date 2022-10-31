@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="./formvalidation.css">
+</head>
+<body>
+    <div class="head">
+    <h1>Registration Form</h1>
+    <div class="form">
+    <!-- <label>UserName</label> -->
+    <input type="name" placeholder="Username" id="name">
+    <p id="error"></p>
+    <!-- <label>Email</label> -->
+    <input type="email" placeholder="Email" id="email">
+    <p id="error1"></p>
+    <!-- <label>Phone number</label> -->
+    <input type="phonenumber" placeholder="Phonenumber" id="phonenumber">
+    <p id="phone"></p>
+    <!-- <label>password</label> -->
+    <input type="password" placeholder="Password" id="password">
+    <p id="error2"></p>
+    <!-- <label>Confirm password</label> -->
+    <input type="password" placeholder="Confirm password" id="password1">
+    <p id="error3"></p>
+    <!-- radio button -->
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+       CS
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+       BCA
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+       IT
+      </label>
+    </div>
+    <div>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Select Your College</option>
+      <option value="1">SJSMVCAS</option>
+      <option value="2">HICAS</option>
+      <option value="3">PSGCAS</option>
+    </select>
+  </div>
+  <div class="date">
+    <input type="date"  min="2022-09-28" max="2022-10-01" id="date">
+  </div>
+  <div class="checkbox1">  
+     
+     <input  type="checkbox" id="vehicle1"  >I agree the terms & Conditions
+    </div>
+
+    <div>
+    <button class="button" onclick="formvalidation()">Submit</button>
+  </div>
+   </div>
+    </div>
+
+
+
+    <script>
+       function formvalidation(){
+        // name validation
+
+        var name=document.getElementById("name").value;
+        var fnamepattern= /[a-zA-Z]/;
+      if(name==null||name==""){
+        document.getElementById("error").innerHTML="*please enter the name*";
+      }
+      else if(!fnamepattern.test(name))
+      {
+        document.getElementById("error").innerHTML="*please enter the valid name*";
+      }
+      else{
+        document.getElementById("error").innerHTML="";
+      }   
+
+      // email validation
+     var email=document.getElementById("email").value;
+     var femailpattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+     if (email==null||email==""){
+      document.getElementById("error1").innerHTML="*please fill the email*";
+     }
+     else if(!femailpattern.test(email)){
+      document.getElementById("error1").innerHTML="*please fill email correct format*";
+     }
+     else{
+       document.getElementById("error1").innerHTML="";
+     }
+    // phone number
+    var phonenumber=document.getElementById("phonenumber").value;
+     var phonepattern=/^\d{10}$/
+     if (phonenumber==null||phonenumber==""){
+      document.getElementById("phone").innerHTML="*please fill the phonenumber*";
+     }
+     else if(!phonepattern.test(phonenumber)){
+      document.getElementById("phone").innerHTML="*please fill correct phonenumber format*";
+     }
+     else{
+       document.getElementById("phone").innerHTML="";
+     }
+    //  password validation
+    var password=document.getElementById("password").value;
+    var passpattern=/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{1,7}$/;
+    if(password==null||password==""){
+      document.getElementById("error2").innerHTML="*password cannot be blank*";
+    }
+    else if(!passpattern.test(password)){
+      document.getElementById("error2").innerHTML="*password must be special character*";
+    }
+    else{
+      document.getElementById("error2").innerHTML="";
+    }
+
+    // confirm password/
+    var password1=document.getElementById("password1").value;
+    if(password1==""||password1==null){
+      document.getElementById("error3").innerHTML="*password cannot be blank*";
+    }
+    else if(password != password1){
+      document.getElementById("error3").innerHTML="password does not match";
+    }
+    else{
+      document.getElementById("error3").innerHTML="";
+    }
+ 
+    // Date validation
+  
+ }
+
+       
+    </script>
+</body>
+</html>
