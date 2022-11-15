@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contain{
+background-color: rgb(245, 4, 4);
+}
+
+#logo{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    width: 40%;
+}
+
+
+.nav-item a{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+.carousel-item img{
+    width: 200%;
+    height: auto;
+}
+
+.head{
+  bottom: 300px;
+   font-size: 70px;
+   font-family: inherit;
+   font-weight: bold;
+   position: relative;
+}
+
+p1{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    right: 20px;
+}
+
+#but{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom: 80px;
+}
+
+#but:hover{
+border-radius: 15px;
+background-color: #fff;
+color: red;
+}
+
+.arrow{
+    text-align: center;
+position: relative;
+bottom: 16px;
+}
+
+.arrow img{
+    text-align: center;
+    width: 6%;
+}
+
+.head1 h1{
+font-weight: 700;
+font-family: inherit;
+font-size: 30px;
+text-decoration: underline 1px solid red;
+}
+
+span{
+    color: #3d3c3c;
+    font-size: 17px;
+    line-height: 30px;
+    font-family:'poppins', sans-serif;
+}
+
+.abthd{
+    font-family: inherit;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.para1 p2{
+    font-size: 16.5px;
+    font-family: 'poppins', sans-serif;
+    color: gray;
+    width: 100%;
+    line-height: 28px;
+    font-weight: 300;
+text-align: center !important;
+}
+
+#but1{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    position: relative;
+   top: 40px;
+   padding: 10px 20px;
+}
+
+.pt-5 h1{
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 50px;
+    text-decoration: underline 1px solid red; 
+}
+
+#com{
+    background-color: black;
+
+}
+
+#com:hover{
+    background-color: red;
+}
+
+#but3{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-weight: bold; 
+    padding: 10px 30px;
+    margin-bottom: 50px;
+}
+
+#but3:hover{
+    background-color: red;
+    border-radius: 15px;
+}
+
+.card{
+    margin: 20px 30px;
+    border-radius: 100px;
+    padding: -50px -20px;
+}
+
+.card:hover{
+    color: #fc4311;
+}
+
+img:hover{
+    color: #fc4311;}
+
+.card a{
+    position: relative;
+    bottom: 70px;
+    color: #fc4311;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+}
