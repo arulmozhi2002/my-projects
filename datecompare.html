@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>javascript Date compare </h1>
+     <input type="date" id="d1">
+     <input type="date" id="d2">
+    <p id="error"></p>
+    <button onclick="validate()">click</button>
+</body>
+
+<script>
+        function validate(){
+          var date=document.getElementById("d1").value;
+          var date1=document.getElementById("d2").value;
+//declare variable and get a value //
+   if(date>date1){
+    document.getElementById("error").innerHTML="first date is greater then 2nd date"
+   }
+//if date one is greater then date2//
+
+   else if(date<date1){
+    document.getElementById("error").innerHTML="second date is greater then 1st date"
+   }
+//if date one is less then date2//   
+   else{
+    document.getElementById("error").innerHTML="both are same"
+   }
+//else both are same
+        }
+        
+
+
+</script>
+  
+
+
+
+</html>
